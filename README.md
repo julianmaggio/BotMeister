@@ -1,5 +1,3 @@
-Apologies for the oversight. Here's an updated version of the readme that includes the missing information:
-
 # Botmeister
 
 Botmeister is a versatile Discord bot built using Discord.py. It provides a range of useful features to enhance your Discord server's functionality. With Botmeister, you can get weather updates, set countdown timers, clear messages, and more. The bot is designed to be customizable and extendable, allowing you to tailor it to suit your specific server needs.
