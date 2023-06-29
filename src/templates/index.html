@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolig Bot | Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">Bolig Bot</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/commands">
+                            <i class="fas fa-list"></i> Commands
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/dashboard">
+                            <i class="fas fa-chart-bar"></i> Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/settings">
+                            <i class="fas fa-cog"></i> Settings
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/logs">
+                            <i class="fas fa-file-alt"></i> Logs
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1>Welcome to My Discord Bot</h1>
+        <p>This is a cool Discord bot that can perform various tasks.</p>
+        <a href="/commands" class="btn btn-primary btn-rounded">View Commands</a>
+        <a href="/settings" class="btn btn-secondary btn-rounded">Edit Settings</a>
+        <a href="/dashboard" class="btn btn-rounded btn-rounded">View Dashboard</a>
+
+        <h2>About</h2>
+        <p>The Bolig Bot is a powerful Discord bot designed to enhance your server experience. It comes with a variety of features and commands that can be customized to suit your needs.</p>
+        
+        <h2>Features</h2>
+        <ul>
+            <li>Command-based functionality</li>
+            <li>Dashboard for monitoring and managing the bot</li>
+            <li>Integration with various APIs</li>
+            <li>Weather updates</li>
+            <li>Logging system</li>
+            <li>And much more!</li>
+        </ul>
+
+        <h2>How to Use</h2>
+        <p>To start using the Bolig Bot, simply invite it to your Discord server and configure the settings to your liking. You can then use the available commands to interact with the bot and access its features. For a complete list of commands, visit the Commands page.</p>
+
+        <h2>Support and Documentation</h2>
+        <p>If you need any assistance or have questions regarding the Bolig Bot, please refer to the documentation or reach out to our support team. We're here to help!</p>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolig Bot | Commands</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">Bolig Bot</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/commands">
+                            <i class="fas fa-list"></i> Commands
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/dashboard">
+                            <i class="fas fa-chart-bar"></i> Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/settings">
+                            <i class="fas fa-cog"></i> Settings
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/logs">
+                            <i class="fas fa-file-alt"></i> Logs
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1>Bot Commands</h1>
+        <p>Here are some of the available commands:</p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Command</th>
+                    <th>Description</th>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>/help</td>
+                    <td>Display the list of available commands.</td>
+                    <td>/help</td>
+                </tr>
+                <tr>
+                    <td>/ping</td>
+                    <td>Check the bot's latency.</td>
+                    <td>/ping</td>
+                </tr>
+                <tr>
+                    <td>/weatherstart</td>
+                    <td>Start the weather updates.</td>
+                    <td>/weatherstart</td>
+                </tr>
+                <tr>
+                    <td>/weatherstop</td>
+                    <td>Stop the weather updates.</td>
+                    <td>/weatherstop</td>
+                </tr>
+                <tr>
+                    <td>/Countdown [seconds]</td>
+                    <td>Set a countdown in seconds.</td>
+                    <td>/Countdown 60</td>
+                </tr>
+                <tr>
+                    <td>/Clear [number]</td>
+                    <td>Clear a specified number of messages.</td>
+                    <td>/Clear 5</td>
+                </tr>
+                <tr>
+                    <td>/userinfo</td>
+                    <td>Display information about the user.</td>
+                    <td>/userinfo</td>
+                </tr>
+                <tr>
+                    <td>/serverinfo</td>
+                    <td>Display information about the server.</td>
+                    <td>/serverinfo</td>
+                </tr>
+                <tr>
+                    <td>/roll [number]</td>
+                    <td>Roll a dice with the specified number of sides.</td>
+                    <td>/roll 6</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+
+    <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
